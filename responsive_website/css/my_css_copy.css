@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #7f7f7f;
+  overflow-x: hidden;
+  padding-top: 0px;
+}
+header {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  max-height: 5%;
+}
+.nav-link {
+  font-size: 2em;
+}
+
+@media (max-width: 575.98px) { 
+  #logo a img {
+    width: 300px;
+    height: 64px;
+  }
+}
+@media (max-width: 767px) and (min-width: 576px){
+  #logo a img {
+    width: 300px;
+    height: 64px;
+  }
+}
+
+@media (max-width: 991.98px) { 
+  #logo a img {
+    width: 250px;
+    height: 53px;
+  }
+}
+@media (min-width: 992px) {
+  #logo a img {
+    width: 300px;
+    height: 64px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #logo a img {
+    width: 707px;
+    height: 151px;
+  }
+}
+
+#logo a img{
+  width: 15;
+  height: 8em;
+}
+#top-icon {
+  color: #e94b3cff;
+  padding-right: 20px;
+  padding-top:5px;
+  padding-left:5px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 68;
+  height: 68;
+}
+#top-icon:hover {
+  opacity: 0.7;
+  text-decoration: none;
+  color:#2D2926;
+}
+
+
+#backToTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  height: 50px;
+  width: 50px;
+  font-size: 18px; /* Increase font size */
+}
+#backToTop:hover {
+  opacity: 0.7;
+}
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.nopadding {
+  padding: 0 !important;
+}
+.nomargin {
+  margin: 0 !important;
+}
+
+#logo a img {
+    width: 300px;
+    height: 64px;
+}
+
+.container-fluid {
+  height: 3em;
+}
+
+#Work{
+  margin-left:2em;
+  margin-right:2em;
+
+}
+
+.our-work{
+  font-size: 32px;
+  color:#F2EDD7FF;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+main{
+  background-color: white;
+  border-left: 2em solid white;
+  border-right: 2em solid white;
+}
+
+#skills{
+  background-color: white;
+  border-left: 3em solid white;
+  border-right: 3em solid white;
+}
+
+.skills-content{
+  border-left: 2.5em solid white;
+  border-right: 2.5em solid white;
+}
+
+/*#ContactUs{
+  background-color:white;
+}*/
+.contact-title{
+  font-weight: bold;
+}
+
+#ContactUs .form-wrap label {
+  color: black;
+}
+
+.footer-s{
+  background-color: black;
+
+}
+
+.footer-icon{
+  width:100px;
+  height:100px;
+  float: center;
+  margin-left:10px;
+  margin-right:10px; 
+}
+
+
+
+/*Css para os Contactos*/
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+/* Contact us section style goes here */
+
+
+#ContactUs {
+	padding: 70px 0;
+}
+#ContactUs .contact-title {
+	font-size: 30px;
+	color: #000;
+	text-align: center;
+	margin: 0 0 30px;
+}
+#ContactUs .contact-outer-wrapper {
+	width: 100%;
+	height: auto;
+	display: table;
+	margin: 0 auto;
+}
+#ContactUs .address-block {
+	width: 40%;
+	height: 100%;
+	display: table-cell;
+	color: #333;
+	position: relative;
+	padding: 40px;
+}
+#ContactUs .address-block::after {
+  position: absolute;
+  content: "";
+  right: 3%;
+  width: 1px;
+  height: 80%;
+  background: #ccc;
+  top: 10%;
+}
+#ContactUs .add-title {
+	font-size: 22px;
+	font-weight: bold;
+	margin: 0 0 50px;
+}
+#ContactUs .c-detail {
+	margin-bottom: 20px;
+}
+#ContactUs .c-detail:last-child {
+	margin-bottom: 0;
+}
+#ContactUs .c-detail .c-icon {
+  width: 8%;
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: top;
+}
+#ContactUs .c-detail .c-info {
+	width: 90%;
+	display: inline-block;
+	vertical-align: top;
+}
+#ContactUs .c-detail span .fa {
+	vertical-align: top;
+}
+#ContactUs .form-wrap {
+	width: 60%;
+	display: table-cell;
+	padding: 40px;
+}
+#ContactUs .form-wrap .floating-label {
+	position: relative;
+	width: 47%;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+#ContactUs .form-wrap .fname, #ContactUs .form-wrap .contact {
+	margin-right: 20px;
+}
+#ContactUs .form-wrap .user-msg {
+	width: 98%;
+	display: block;
+	margin-bottom: 40px;
+}
+#ContactUs .floating-input {
+	width: 100%;
+	border: 0;
+	border-bottom: 1px solid #999999;
+	box-shadow: none;
+	background-color: transparent;
+	padding-top: 3px;
+}
+#ContactUs .floating-input:focus {
+	outline: 0;
+}
+#ContactUs .form-wrap label {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	font-size: 14px;
+	text-align: left;
+	color: #999999;
+	transition: top 0.2s ease-in-out;
+	z-index: -1;
+	margin: 0;
+}
+#ContactUs .floating-input:focus ~ label, #ContactUs .floating-input.not-empty ~ label {
+	top: -18px;
+  font-size:12px;
+  color:#0098aa;
+  transition: top 0.2s ease-in-out;
+}
+#ContactUs .submit-btn {
+	text-align: center;
+}
+#ContactUs .submit-btn button {
+	font-size: 16px;
+	border: 0;
+	border-radius: 0;
+	background-color: #0098aa;
+	color: #fff;
+	padding: 10px 20px;
+	cursor: pointer;
+	outline: 0;
+}
+#ContactUs .submit-btn button:hover {
+	background-color: rgba(0,152,170,0.8);
+}
+/*Para tornar responsivo os contactos*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+
+  /* contact us style */
+  #ContactUs {
+    padding: 50px 0;
+  }
+  #ContactUs .contact-outer-wrapper {
+    display: block;
+  }
+  #ContactUs .address-block {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 30px;
+  }
+  #ContactUs .address-block::after {
+    display: none;
+  }
+  #ContactUs .form-wrap {
+    display: block;
+    width: 100%;
+    padding: 30px 0 0;
+  }
+  #ContactUs .form-wrap .floating-label {
+    width: 100%;
+  }
+  #ContactUs .form-wrap .fname,
+  #ContactUs .form-wrap .contact {
+    margin-right: 0;
+  }
+  #ContactUs .contact-title {
+    margin: 0 0 20px;
+  }
+  #ContactUs .add-title {
+    text-align: center;
+    margin: 0 0 30px;
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Header style */
+  .navbar-nav {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  /* testmonial slider style*/
+  #Testimonial .testimonial-slider li br {
+    display: none;
+  }
+  /* contact section style */
+  #ContactUs {
+    padding: 50px 0;
+  }
+  #ContactUs .contact-outer-wrapper {
+    display: block;
+  }
+  #ContactUs .address-block {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 30px;
+  }
+  #ContactUs .address-block::after {
+    display: none;
+  }
+  #ContactUs .form-wrap {
+    display: block;
+    width: 100%;
+    padding: 30px 0 0;
+  }
+  #ContactUs .form-wrap .floating-label {
+    width: 100%;
+  }
+  #ContactUs .form-wrap .fname,
+  #ContactUs .form-wrap .contact {
+    margin-right: 0;
+  }
+  #ContactUs .contact-title {
+    margin: 0 0 50px;
+  }
+  .block-heading {
+    margin-bottom: 30px;
+  }
+  #ContactUs .contact-title {
+    margin: 0 0 20px;
+  }
+  #ContactUs .add-title {
+    text-align: center;
+    margin: 0 0 30px;
+  }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Header style */
+  .navbar-nav {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  /* testimonial slider style */
+  #Testimonial .testimonial-slider li br {
+    display: none;
+  }
+  /* contact us section style */
+  #ContactUs .contact-outer-wrapper {
+    display: block;
+  }
+  #ContactUs .address-block {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 30px;
+  }
+  #ContactUs .address-block::after {
+    display: none;
+  }
+  #ContactUs .form-wrap {
+    display: block;
+    width: 100%;
+    padding: 30px 0 0;
+  }
+  #ContactUs .c-detail .c-icon {
+    width: 6%;
+  }
+  #ContactUs .c-detail .c-info {
+    width: 92%;
+  }
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* contact us section style */
+  #ContactUs .c-detail .c-icon {
+    width: 10%;
+  }
+  #ContactUs .c-detail .c-info {
+    width: 87%;
+  }
+}

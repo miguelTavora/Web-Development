@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<!-- TODO 
+
+-------------IMPORTANTE-------------
+
+-------------IMPORTANTE-------------
+
+-------------IMPORTANTE-------------
+
+-------------IMPORTANTE-------------
+
+
+APAGAR OS CSS INLINE ANTES DE ENVIAR 
+
+
+-------------IMPORTANTE-------------
+
+-------------IMPORTANTE-------------
+
+-------------IMPORTANTE-------------
+
+-------------IMPORTANTE-------------
+
+
+
+
+
+-->
+<html lang="pt-pt">
+	<head>
+		<meta
+			charset="UTF-8"
+			content="width=device-width, initial-scale=1.0"
+			name="viewport"
+		/>
+
+		<link rel="stylesheet" type="text/css" href="css/myCss.css" />
+
+		<script src="script/blackjack_manager.js"></script>
+		<script src="script/blackjack_object.js"></script>
+		<script src="script/blackjack_graphics.js"></script>
+
+		<!-- BOOTSTRAP -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+
+		<title>BlackJack</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="logo2 text-center">
+				<a href="# ">
+					<img class="firstImage" src="images/logo.png" alt="" />
+				</a>
+			</div>
+		</header>
+
+		<section>
+			<div class="text-center">
+				<h1>BLACKJACK</h1>
+			</div>
+		</section>
+
+		<section id="game" class="w-100 text-center">
+			<div id="dealer_cards">
+				<h1 class="agent_name">DEALER</h1>
+
+				<p id="dealer" class="buttom_value"></p>
+				<div id="dealer_cards_img"></div>
+			</div>
+			<div id="player_cards">
+				<h1 class="agent_name">PLAYER</h1>
+
+				<p id="player" class="buttom_value"></p>
+				<div id="player_cards_img"></div>
+			</div>
+			<div class="game_buttons add_margin">
+				<button
+					id="card"
+					type="button"
+					onclick="player_new_card()"
+					class="game_button"
+				>
+					<img src="images/button_card.png" alt="" />
+					<img
+						src="images/button_card_disable.png"
+						alt=""
+						class="disabled"
+					/>
+				</button>
+				<button
+					id="stand"
+					type="button"
+					onclick="dealer_finish()"
+					class="game_button"
+				>
+					<img src="images/button_stand.png" alt="" />
+					<img
+						src="images/button_stand_disable.png"
+						alt=""
+						class="disabled"
+					/>
+				</button>
+				<button
+					id="new_game"
+					type="button"
+					onclick="new_game()"
+					disabled
+					class="game_button"
+				>
+					<img src="images/button_newgame.png" alt="" />
+					<img
+						src="images/button_newgame_disabled.png"
+						alt=""
+						class="disabled"
+					/>
+					<!--NEW GAME-->
+				</button>
+			</div>
+		</section>
+
+		<section class="add_margin text-center">
+			<h2 id="pontuacao"></h2>
+			<h2 id="resultado"></h2>
+		</section>
+
+		<section>
+			<div id="sec_debug" class="add_margin">
+				<h1>Debug</h1>
+				<p id="debug"></p>
+			</div>
+		</section>
+
+		<footer class="down_black">
+			<div class="container">
+				<button id="botao_debug" onclick="toggle_debug()">
+					<img src="/images/button_debug.png" alt="" />
+				</button>
+			</div>
+		</footer>
+
+		<section>
+			<script>
+				window.onload = new_game();
+			</script>
+		</section>
+	</body>
+</html>

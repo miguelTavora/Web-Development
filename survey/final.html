@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <script src="scripts/script.js"></script>
+
+    <title>Suas Respostas</title>
+</head>
+
+<body style="background-color: #C0C0C0;">
+    <header>
+        <div class="draw-b">
+            <a href="#">
+                <img class="firstImage" src="images/logo.png" alt="oops"
+                    onclick="document.location = '../VSearch.html'" />
+            </a>
+        </div>
+    </header>
+
+    <section class="incs">
+        <h2 class="mx-auto">
+            As suas respostas:
+        </h2>
+    </section>
+
+    <section class="incs2">
+        <h3 class="mx-auto">
+            Informação do utilizador:
+        </h3>
+        <div class="box" id="parte1">
+        </div>
+    </section>
+
+    <section class="incs2">
+        <h3 class="mx-auto">
+            Tarefas realizadas pelo utilizador:
+        </h3>
+        <div class="box" id="parte2">
+        </div>
+
+    </section>
+
+    <section class="incs2">
+        <h3 class="mx-auto">
+            Avaliação dada pelo utilizador:
+        </h3>
+        <div class="box" id="parte3">
+        </div>
+
+
+    </section>
+    <script>window.onload = getUltimosResultados(); </script>
+</body>
+
+</html>
